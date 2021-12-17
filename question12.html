@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <script
+         src="https://kit.fontawesome.com/34e1afac79.js"
+         crossorigin="anonymous"
+      ></script>
+      <script src="https://code.angularjs.org/1.8.2/angular.min.js"></script>
+      <script src="https://code.angularjs.org/1.8.2/angular-route.min.js"></script>
+      <link rel="stylesheet" href="./question12.css" />
+      <script>
+         const app = angular.module("myApp", ["ngRoute"]);
+
+         app.config(function ($routeProvider) {
+            $routeProvider
+
+               .when("/", {
+                  templateUrl: "./question12_default.html",
+               })
+               //this is the location to go when you select an Item
+               .when("/register", {
+                  templateUrl: "./question12_form.html",
+               })
+
+               .otherwise({
+                  redirectTo: "/",
+               });
+         });
+
+         app.controller("ngController", function ($scope) {
+            $scope.telephone = "[1]?[- ]?[0-9]{3}[- ]?[0-9]{3}[- ]?[0-9]{4}";
+         });
+      </script>
+   </head>
+   <!-- The app module -->
+   <body ng-app="myApp">
+      <!-- This is the Instance of the Cart Controller -->
+      <div class="container" ng-controller="ngController">
+         <header>
+            <div class="header-left">
+               <div class="logo">
+                  <img
+                     src="./SchoolInfo/School_logo.png"
+                     style="width: 80px; mix-blend-mode: darken; display: grid"
+                  />
+                  Dawnz Eyewear
+               </div>
+               <div class="contact-info">
+                  <div class="tel-no">
+                     <img src="./UsefulSVG/call.svg" width="25px" />
+                     <p>(+1) 876 396 4259</p>
+                  </div>
+                  <div class="email">
+                     <img src="./UsefulSVG/mail.svg" width="25px" />
+                     <p>damiangreen@outlook.com</p>
+                  </div>
+               </div>
+            </div>
+            <div class="header-right">
+               <i class="fas fa-search"></i>
+               <a href="#!user" style="text-decoration: none; color: inherit">
+                  <i class="fas fa-user"></i>
+               </a>
+               <a
+                  href="#!cartitem"
+                  style="text-decoration: none; color: inherit"
+               >
+                  <i class="fas fa-shopping-bag"></i>
+
+                  <!-- <span>{{count}}</span> -->
+               </a>
+            </div>
+         </header>
+
+         <section class="nav-container">
+            <ul class="menu-list">
+               <li class="home">
+                  <a href="#!/"> Home </a>
+               </li>
+               <li class="shop">
+                  <a href="#"> Courses </a>
+
+                  <!-- <div class="home-outer outer">
+                     <ul class="sub-menu sub1">
+                        <li>
+                           <a href="#">Men's Sunglasses</a>
+                           <ul class="sub-menu sub2">
+                              <li>
+                                 <a href="#">EyePatch</a>
+                              </li>
+                              <li>
+                                 <a href="#">EyeTap</a>
+                              </li>
+                              <li>
+                                 <a href="#">Mirror Sunglasses</a>
+                              </li>
+                              <li>
+                                 <a href="#">Shooting Glasses</a>
+                              </li>
+                              <li>
+                                 <a href="#">Shutter Shades</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="#">Women's Sunglasses</a>
+                           <ul class="sub-menu sub2">
+                              <li>
+                                 <a href="#">Cateyeglasses</a>
+                              </li>
+                              <li>
+                                 <a href="#">Computer Glasses</a>
+                              </li>
+                              <li>
+                                 <a href="#">Epiphany Eyewear</a>
+                              </li>
+                              <li>
+                                 <a href="#">Frame-Less Glasses</a>
+                              </li>
+                              <li>
+                                 <a href="#">Contact Lenses</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="#">Kid's Sunglasses</a>
+                           <ul class="sub-menu sub2">
+                              <li>
+                                 <a href="#">Eyeglasses</a>
+                              </li>
+                              <li>
+                                 <a href="#">Sunglasses</a>
+                              </li>
+                              <li>
+                                 <a href="#">Rectangleglasses</a>
+                              </li>
+                              <li>
+                                 <a href="#">Roundglasses</a>
+                              </li>
+                              <li>
+                                 <a href="#">Wayfarerglasses</a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div> -->
+               </li>
+               <li class="home">
+                  <a href="#!register">Admission</a>
+               </li>
+               <li class="home">
+                  <a href="#">About Us</a>
+
+                  <div class="home-outer outer">
+                     <ul class="sub-menu">
+                        <li>
+                           <a href="#">Who We Are</a>
+                        </li>
+                        <li>
+                           <a href="#">Our Team</a>
+                        </li>
+                        <li>
+                           <a href="#">Contact Us</a>
+                        </li>
+                     </ul>
+                  </div>
+               </li>
+               <li class="home">
+                  <a href="#!cartitem">Your Cart</a>
+               </li>
+            </ul>
+         </section>
+         <section class="main-content"></section>
+         <div ng-view></div>
+      </div>
+   </body>
+</html>

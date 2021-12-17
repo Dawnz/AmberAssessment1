@@ -1,0 +1,18 @@
+<html>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+   <body>
+      <div ng-app="myApp" ng-controller="myCtrl">
+         <p>{{ x1 }}</p>
+         <!-- this evaluates the x1 variable in any scope that has this declared. this was declared in myCtrl as "JAMAICA" -->
+         <p>{{ x2 }}</p>
+         <!-- There was an angular check to see if x1 is a number. This will evaluate to false as it is a string -->
+      </div>
+      <script>
+         var app = angular.module("myApp", []);
+         app.controller("myCtrl", function ($scope) {
+            $scope.x1 = "JAMAICA";
+            $scope.x2 = angular.isNumber($scope.x1);
+         });
+      </script>
+   </body>
+</html>

@@ -1,0 +1,13 @@
+<html>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+   <body>
+      <div ng-app>
+         <p>Expression: {{ 5 + 5 }}</p>
+      </div>
+      <!-- This output will run if ng-app has been implemented. This will implement the expression because angular is in the application-->
+      <div>
+         <p>Expression: {{ 5 + 5 }}</p>
+      </div>
+      <!-- this will just output the html code and will not evaluate the expression. ng- app needs to be wrapped around angular expressions for them to work -->
+   </body>
+</html>

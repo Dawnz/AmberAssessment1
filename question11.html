@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <script
+         src="https://kit.fontawesome.com/34e1afac79.js"
+         crossorigin="anonymous"
+      ></script>
+      <link rel="stylesheet" href="question11.css" />
+      <title>Botique</title>
+   </head>
+   <body>
+      <div class="container">
+         <section class="header">
+            <section class="account-info">
+               <div class="header-lang-curr">
+                  <!-- <br/> -->
+                  <ul class="ul-lang-curr">
+                     <li>
+                        English
+                        <i class="fas fa-angle-down"></i>
+                     </li>
+                     <div class="lang sub">
+                        <ul name="language" style="opacity: 0.5" class="select">
+                           <li>
+                              <img src="./BookInfo/france_flag.webp" /> France
+                           </li>
+                           <li>
+                              <img src="./BookInfo/croatia_flag.webp" /> Croatia
+                           </li>
+                        </ul>
+                     </div>
+                     <li>
+                        <a href="#"> USD $ <i class="fas fa-angle-down"></i></a>
+                     </li>
+                     <div class="curr sub">
+                        <ul name="language" style="opacity: 0.5" class="select">
+                           <li><a href="#"> USD $</a></li>
+                           <li>
+                              <a href="#">
+                                 EUR € <i class="fas fa-angle-down"></i
+                              ></a>
+                           </li>
+                        </ul>
+                     </div>
+                  </ul>
+               </div>
+               <ul class="acc-list">
+                  <li>
+                     <a href="#">My Account</a>
+                  </li>
+                  <li>
+                     <a href="#">Checkout</a>
+                  </li>
+                  <li>
+                     <a href="#">Sign In</a>
+                  </li>
+               </ul>
+            </section>
+            <section class="search-logo-cart">
+               <div class="store-name">
+                  <!-- <h3>Dawnz Book Store</h3> -->
+                  <!-- <i class="fas fa-flower"></i> -->
+                  <picture>
+                     <source
+                        media="(min-width:1200px)"
+                        srcset="Dawnz_Botique.png"
+                     />
+                     <source
+                        media="(min-width:900px)"
+                        srcset="./BotiqueInfo/Images/FlowerLogo3.jpg"
+                     />
+                     <img
+                        src="./BotiqueInfo/Images/FlowerLogo2.webp"
+                        alt="Flowers"
+                        width="100%"
+                        height="100%"
+                        style="object-fit: contain"
+                     />
+                  </picture>
+                  <!-- <i class="fas fa-book fa-5x"></i> -->
+               </div>
+               <div class="searchbar">
+                  <form action="#">
+                     <input
+                        type="text"
+                        placeholder="Search entire store here"
+                     />
+                     <a href="#">
+                        <i class="fa fa-search"></i>
+                     </a>
+                  </form>
+               </div>
+               <div class="cart">
+                  <a href="#">
+                     <i class="fas fa-shopping-cart fa-2x"></i> My Cart
+                  </a>
+                  <span>3</span>
+                  <div class="sub mini-cart"></div>
+               </div>
+            </section>
+            <section class="menu-items">
+               <nav>
+                  <ul>
+                     <li class="active">
+                        <a href="#"
+                           >HOME
+                           <i class="fas fa-angle-down"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#"
+                           >PRODUCTS
+                           <i class="fas fa-angle-down"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#"
+                           >ORDERS
+                           <i class="fas fa-angle-down"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#"
+                           >CATEGORY
+                           <i class="fas fa-angle-down"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#"
+                           >CART
+                           <i class="fas fa-angle-down"></i>
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+            </section>
+         </section>
+
+         <section class="main-content">
+            <section class="policies">
+               <div class="policy">
+                  <img src="./UsefulSVG/shipping.webp" />
+                  <div>
+                     <h5>Free Shipping Item</h5>
+                     <p>for all orders over $500</p>
+                  </div>
+               </div>
+               <div class="policy">
+                  <img src="./UsefulSVG/calendar.webp" />
+                  <div>
+                     <h5>Money back gurantee</h5>
+                     <p>100% money back gurantee</p>
+                  </div>
+               </div>
+               <div class="policy">
+                  <img src="./UsefulSVG/wallet.webp" />
+                  <div>
+                     <h5>Cash on delivery</h5>
+                     <p>Yuh can pay fi it when it reach</p>
+                  </div>
+               </div>
+               <div class="policy">
+                  <img src="./UsefulSVG/telephone.webp" />
+                  <div>
+                     <h5>Help & Support</h5>
+                     <p>Call us: +1-876-396-4259</p>
+                  </div>
+               </div>
+            </section>
+            <section class="cover">
+               <a class="prev">&#10094;</a>
+               <a class="next">&#10095;</a>
+               <div class="mySlides fade">
+                  <img
+                     src="./BotiqueInfo/images/wallpaper1.jpg"
+                     alt="wallpaper1"
+                  />
+               </div>
+               <div class="mySlides fade">
+                  <img
+                     src="./BotiqueInfo/images/wallpaper2.jpg"
+                     alt="wallpaper2"
+                  />
+               </div>
+
+               <div class="mySlides fade">
+                  <img
+                     src="./BotiqueInfo/images/wallpaper3.jpg"
+                     alt="wallpaper3"
+                  />
+               </div>
+               <div class="mySlides fade">
+                  <img
+                     src="./BotiqueInfo/images/wallpaper4.jpg"
+                     alt="wallpaper4"
+                  />
+               </div>
+               <div class="mySlides fade">
+                  <img
+                     src="./BotiqueInfo/images/wallpaper5.jpg"
+                     alt="wallpaper5"
+                  />
+               </div>
+            </section>
+            <section class="home">
+               <section class="book-items">
+                  <nav>
+                     <ul>
+                        <li><b>NEW ARRIVAL</b></li>
+                        <li><b>ON SALE</b></li>
+                        <li><b>FEATURED PRODUCTS</b></li>
+                     </ul>
+                  </nav>
+               </section>
+               <div class="book-gallery">
+                  <div class="book">
+                     <div class="book-contents">
+                        <a href="#">
+                           <img src="./BotiqueInfo/Flowers/flower1.jpg" />
+                           <p class="book-title">Birthday</p>
+                           <p class="book-cost">$120.54</p>
+                           <section class="book-rating">
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="far fa-star"></span>
+                              <span class="far fa-star"></span>
+                           </section>
+                           <div class="overlay">
+                              <div class="overlay-text">
+                                 <i class="fas fa-shopping-cart"></i>
+                                 <p>Add to Cart</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="book">
+                     <div class="book-contents">
+                        <a href="#">
+                           <img src="./BotiqueInfo/Flowers/flower2.jpg" />
+                           <p class="book-title">Christmas Sweets</p>
+                           <p class="book-cost">$98.13</p>
+                           <section class="book-rating">
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                           </section>
+                           <div class="overlay">
+                              <div class="overlay-text">
+                                 <i class="fas fa-shopping-cart"></i>
+                                 <p>Add to Cart</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="book">
+                     <div class="book-contents">
+                        <a href="#">
+                           <img src="./BotiqueInfo/Flowers/flower3.jpg" />
+                           <p class="book-title">Snowman Surprize</p>
+                           <p class="book-cost">$131.36</p>
+                           <section class="book-rating">
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="far fa-star"></span>
+                              <span class="far fa-star"></span>
+                           </section>
+                           <div class="overlay">
+                              <div class="overlay-text">
+                                 <i class="fas fa-shopping-cart"></i>
+                                 <p>Add to Cart</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="book">
+                     <div class="book-contents">
+                        <a href="#">
+                           <img src="./BotiqueInfo/Flowers/flower4.jpg" />
+                           <p class="book-title">Christmas Present</p>
+                           <p class="book-cost">$107.54</p>
+                           <section class="book-rating">
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="far fa-star"></span>
+                              <span class="far fa-star"></span>
+                           </section>
+                           <div class="overlay">
+                              <div class="overlay-text">
+                                 <i class="fas fa-shopping-cart"></i>
+                                 <p>Add to Cart</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="book">
+                     <div class="book-contents">
+                        <a href="#">
+                           <img src="./BotiqueInfo/Flowers/flower5.jpg" />
+                           <p class="book-title">A Lovely Evening</p>
+                           <p class="book-cost">$153.45</p>
+                           <section class="book-rating">
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="far fa-star"></span>
+                           </section>
+                           <div class="overlay">
+                              <div class="overlay-text">
+                                 <i class="fas fa-shopping-cart"></i>
+                                 <p>Add to Cart</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="book">
+                     <div class="book-contents">
+                        <a href="#">
+                           <img src="./BotiqueInfo/Flowers/flower6.jpg" />
+                           <p class="book-title">Anniversary</p>
+                           <p class="book-cost">$100.40</p>
+                           <section class="book-rating">
+                              <span class="fas fa-star"></span>
+                              <span class="far fa-star"></span>
+                              <span class="far fa-star"></span>
+                              <span class="far fa-star"></span>
+                              <span class="far fa-star"></span>
+                           </section>
+                           <div class="overlay">
+                              <div class="overlay-text">
+                                 <i class="fas fa-shopping-cart"></i>
+                                 <p>Add to Cart</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="book">
+                     <div class="book-contents">
+                        <a href="#">
+                           <img src="./BotiqueInfo/Flowers/flower7.jpg" />
+                           <p class="book-title">Santa Boquette</p>
+                           <p class="book-cost">$99.99</p>
+                           <section class="book-rating">
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="far fa-star"></span>
+                           </section>
+                           <div class="overlay">
+                              <div class="overlay-text">
+                                 <i class="fas fa-shopping-cart"></i>
+                                 <p>Add to Cart</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="book">
+                     <div class="book-contents">
+                        <a href="#">
+                           <img src="./BotiqueInfo/Flowers/flower8.jpg" />
+                           <p class="book-title">New Year Present</p>
+                           <p class="book-cost">$120.54</p>
+                           <section class="book-rating">
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="far fa-star"></span>
+                              <span class="far fa-star"></span>
+                              <span class="far fa-star"></span>
+                           </section>
+                           <div class="overlay">
+                              <div class="overlay-text">
+                                 <i class="fas fa-shopping-cart"></i>
+                                 <p>Add to Cart</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </section>
+         <section class="footer"></section>
+      </div>
+      <script>
+         var slideIndex = 0;
+         showSlides();
+
+         function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            // var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+               slideIndex = 1;
+            }
+            // for (i = 0; i < dots.length; i++) {
+            //    dots[i].className = dots[i].className.replace(" active", "");
+            // }
+            slides[slideIndex - 1].style.display = "block";
+            // dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 4000); // Change image every 2 seconds
+         }
+      </script>
+   </body>
+</html>
